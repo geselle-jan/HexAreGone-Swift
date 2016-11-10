@@ -1,25 +1,213 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PED-Yg-Pmc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Game View Controller-->
+        <!--Menu-->
+        <scene sceneID="Tp4-Ez-JpX">
+            <objects>
+                <viewController storyboardIdentifier="Menu" title="Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PED-Yg-Pmc" customClass="MenuViewController" customModule="HexAreGone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6jt-Nk-34s"/>
+                        <viewControllerLayoutGuide type="bottom" id="j0x-Ak-Pyg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AoG-P8-9vD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="by Jan Geselle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dUL-Fy-3Mh">
+                                <rect key="frame" x="459" y="562" width="105" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.035022638738155365" green="0.090337865054607391" blue="0.08943997323513031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HexAreGone" textAlignment="right" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="9it-R5-ZEk">
+                                <rect key="frame" x="317" y="17" width="247" height="55"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="48"/>
+                                <color key="textColor" red="0.035022638738155365" green="0.090337865054607391" blue="0.08943997323513031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioY-Lf-wKg">
+                                <rect key="frame" x="509" y="311" width="55" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" identifier="toGame" modalTransitionStyle="flipHorizontal" id="dCi-8q-fXV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Yir-GL-XlM">
+                                <rect key="frame" x="-4" y="275" width="568" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" red="0.035022638738155365" green="0.090337865054607391" blue="0.08943997323513031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sua-5g-Suj">
+                                <rect key="frame" x="473" y="369" width="91" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                                <state key="normal" title="Tutorial">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="16G-KQ-ewY" kind="presentation" identifier="toTutorial" modalTransitionStyle="flipHorizontal" id="x15-zx-ocP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhR-ti-kze">
+                                <rect key="frame" x="36" y="208" width="528" height="55"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="48"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Highscore" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-wl-uPA">
+                                <rect key="frame" x="36" y="189" width="528" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10583677887916565" green="0.40696382522583008" blue="0.40245568752288818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ioY-Lf-wKg" firstAttribute="top" secondItem="VhR-ti-kze" secondAttribute="bottom" constant="48" id="0TN-0Y-MQt"/>
+                            <constraint firstItem="VhR-ti-kze" firstAttribute="top" secondItem="vpe-wl-uPA" secondAttribute="bottom" id="Ck9-Rd-uyQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sua-5g-Suj" secondAttribute="trailing" constant="20" id="DGs-PU-Vv0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ioY-Lf-wKg" secondAttribute="trailing" constant="20" id="FKu-vT-XlC"/>
+                            <constraint firstItem="sua-5g-Suj" firstAttribute="top" secondItem="ioY-Lf-wKg" secondAttribute="bottom" constant="8" id="R4m-KP-SPv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9it-R5-ZEk" secondAttribute="trailing" constant="20" id="RBI-5L-WSV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vpe-wl-uPA" secondAttribute="trailing" constant="20" id="RYG-Yp-laE"/>
+                            <constraint firstAttribute="centerY" secondItem="ioY-Lf-wKg" secondAttribute="centerY" constant="-36" id="RdJ-g0-mg3"/>
+                            <constraint firstItem="9it-R5-ZEk" firstAttribute="top" secondItem="6jt-Nk-34s" secondAttribute="bottom" constant="17" id="WST-zj-F9f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dUL-Fy-3Mh" secondAttribute="trailing" constant="20" id="gcm-er-gdJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VhR-ti-kze" secondAttribute="trailing" constant="20" id="hi1-yS-qzG"/>
+                            <constraint firstItem="VhR-ti-kze" firstAttribute="leading" secondItem="AoG-P8-9vD" secondAttribute="leadingMargin" constant="20" id="tLn-MF-Wv9"/>
+                            <constraint firstItem="vpe-wl-uPA" firstAttribute="leading" secondItem="AoG-P8-9vD" secondAttribute="leadingMargin" constant="20" id="teT-WO-NFr"/>
+                            <constraint firstItem="j0x-Ak-Pyg" firstAttribute="top" secondItem="dUL-Fy-3Mh" secondAttribute="bottom" constant="17" id="u7I-4T-k5P"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Yir-GL-XlM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="highscoreLabel" destination="VhR-ti-kze" id="a2l-Rc-wmc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v0m-7v-bPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-70" y="166"/>
+        </scene>
+        <!--Game-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Game" title="Game" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BV1-FR-VrT" customClass="GameViewController" customModule="HexAreGone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="maK-i9-Uhn"/>
                         <viewControllerLayoutGuide type="bottom" id="khH-OB-KpY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="PED-Yg-Pmc" kind="presentation" identifier="toMenu" modalTransitionStyle="flipHorizontal" id="WVw-Aa-TMb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="676" y="166"/>
+        </scene>
+        <!--Tutorial-->
+        <scene sceneID="G5q-hU-puF">
+            <objects>
+                <viewController storyboardIdentifier="Tutorial" title="Tutorial" useStoryboardIdentifierAsRestorationIdentifier="YES" id="16G-KQ-ewY" customClass="TutorialViewController" customModule="HexAreGone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gF4-Yn-GJp"/>
+                        <viewControllerLayoutGuide type="bottom" id="rWt-J4-lzG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UFP-hf-M4l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9Z-O2-vfv">
+                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
+                                <string key="text">
+
+
+
+In HexAreGone you play by tapping colorful hexagons coming down from the top of the screen.
+
+When you do so, the background color changes to the color of the one you hit.
+
+If you hit a hexagon of the same color as the background, you loose.
+
+If a hexagon that doesn't have the same color as the background hits the bottom of the screen, you loose.
+
+Have fun!
+                   </string>
+                                <color key="textColor" red="0.035022638738155365" green="0.090337865054607391" blue="0.08943997323513031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFi-7l-bub">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="rfG-Ed-cO5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wU9-cB-lYV">
+                                <rect key="frame" x="514" y="17" width="66" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PED-Yg-Pmc" kind="presentation" identifier="toMenu" modalTransitionStyle="flipHorizontal" id="Pgk-2g-uVy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40326187014579773" green="0.40989869832992554" blue="0.091743171215057373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y9Z-O2-vfv" firstAttribute="leading" secondItem="UFP-hf-M4l" secondAttribute="leading" constant="20" id="FIl-Y9-pab"/>
+                            <constraint firstItem="rWt-J4-lzG" firstAttribute="top" secondItem="Y9Z-O2-vfv" secondAttribute="bottom" id="HbE-3r-0KS"/>
+                            <constraint firstItem="NFi-7l-bub" firstAttribute="leading" secondItem="UFP-hf-M4l" secondAttribute="leading" id="Muu-5j-X1d"/>
+                            <constraint firstAttribute="trailing" secondItem="Y9Z-O2-vfv" secondAttribute="trailing" constant="20" id="WqC-bI-clx"/>
+                            <constraint firstAttribute="trailing" secondItem="wU9-cB-lYV" secondAttribute="trailing" constant="20" id="lv4-WU-2rS"/>
+                            <constraint firstItem="NFi-7l-bub" firstAttribute="top" secondItem="gF4-Yn-GJp" secondAttribute="bottom" id="mR3-rr-qJR"/>
+                            <constraint firstItem="Y9Z-O2-vfv" firstAttribute="top" secondItem="gF4-Yn-GJp" secondAttribute="bottom" id="txp-wu-pRb"/>
+                            <constraint firstAttribute="trailing" secondItem="NFi-7l-bub" secondAttribute="trailing" id="ual-86-kOC"/>
+                            <constraint firstItem="wU9-cB-lYV" firstAttribute="top" secondItem="gF4-Yn-GJp" secondAttribute="bottom" constant="17" id="vrU-mh-xN2"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="textView" destination="Y9Z-O2-vfv" id="3Hr-jj-786"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xn7-n4-MIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676" y="938"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WVw-Aa-TMb"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -15,6 +15,9 @@
 		2A43BB961B1603C900E3386D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A43BB951B1603C900E3386D /* Images.xcassets */; };
 		2A43BB991B1603C900E3386D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A43BB971B1603C900E3386D /* LaunchScreen.xib */; };
 		2A43BBA51B1603C900E3386D /* HexaGoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A43BBA41B1603C900E3386D /* HexaGoneTests.swift */; };
+		2A68BB5D1B17106400A165F4 /* HexGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A68BB5C1B17106400A165F4 /* HexGrid.swift */; };
+		2A8EAF4B1B186032000CBE4B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8EAF491B186032000CBE4B /* MenuViewController.swift */; };
+		2A9703DD1B18A796007A2A95 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9703DC1B18A796007A2A95 /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A43BB851B1603C800E3386D /* HexaGone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexaGone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A43BB851B1603C800E3386D /* HexAreGone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexAreGone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A43BB891B1603C900E3386D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A43BB8A1B1603C900E3386D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A43BB8C1B1603C900E3386D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -40,6 +43,9 @@
 		2A43BB9E1B1603C900E3386D /* HexaGoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexaGoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A43BBA31B1603C900E3386D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A43BBA41B1603C900E3386D /* HexaGoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexaGoneTests.swift; sourceTree = "<group>"; };
+		2A68BB5C1B17106400A165F4 /* HexGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexGrid.swift; sourceTree = "<group>"; };
+		2A8EAF491B186032000CBE4B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2A9703DC1B18A796007A2A95 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +69,7 @@
 		2A43BB7C1B1603C800E3386D = {
 			isa = PBXGroup;
 			children = (
-				2A43BB871B1603C800E3386D /* HexaGone */,
+				2A43BB871B1603C800E3386D /* HexAreGone */,
 				2A43BBA11B1603C900E3386D /* HexaGoneTests */,
 				2A43BB861B1603C800E3386D /* Products */,
 			);
@@ -72,13 +78,13 @@
 		2A43BB861B1603C800E3386D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A43BB851B1603C800E3386D /* HexaGone.app */,
+				2A43BB851B1603C800E3386D /* HexAreGone.app */,
 				2A43BB9E1B1603C900E3386D /* HexaGoneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A43BB871B1603C800E3386D /* HexaGone */ = {
+		2A43BB871B1603C800E3386D /* HexAreGone */ = {
 			isa = PBXGroup;
 			children = (
 				2A43BB8A1B1603C900E3386D /* AppDelegate.swift */,
@@ -89,7 +95,11 @@
 				2A43BB951B1603C900E3386D /* Images.xcassets */,
 				2A43BB971B1603C900E3386D /* LaunchScreen.xib */,
 				2A43BB881B1603C900E3386D /* Supporting Files */,
+				2A68BB5C1B17106400A165F4 /* HexGrid.swift */,
+				2A8EAF491B186032000CBE4B /* MenuViewController.swift */,
+				2A9703DC1B18A796007A2A95 /* TutorialViewController.swift */,
 			);
+			name = HexAreGone;
 			path = HexaGone;
 			sourceTree = "<group>";
 		};
@@ -135,7 +145,7 @@
 			);
 			name = HexaGone;
 			productName = HexaGone;
-			productReference = 2A43BB851B1603C800E3386D /* HexaGone.app */;
+			productReference = 2A43BB851B1603C800E3386D /* HexAreGone.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2A43BB9D1B1603C900E3386D /* HexaGoneTests */ = {
@@ -162,11 +172,13 @@
 		2A43BB7D1B1603C800E3386D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Jan Geselle";
 				TargetAttributes = {
 					2A43BB841B1603C800E3386D = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = LRACL93JKD;
+						LastSwiftMigration = 0800;
 					};
 					2A43BB9D1B1603C900E3386D = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -174,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2A43BB801B1603C800E3386D /* Build configuration list for PBXProject "HexaGone" */;
+			buildConfigurationList = 2A43BB801B1603C800E3386D /* Build configuration list for PBXProject "HexAreGone" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,8 +232,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A43BB8F1B1603C900E3386D /* GameScene.swift in Sources */,
+				2A8EAF4B1B186032000CBE4B /* MenuViewController.swift in Sources */,
 				2A43BB911B1603C900E3386D /* GameViewController.swift in Sources */,
 				2A43BB8B1B1603C900E3386D /* AppDelegate.swift in Sources */,
+				2A9703DD1B18A796007A2A95 /* TutorialViewController.swift in Sources */,
+				2A68BB5D1B17106400A165F4 /* HexGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,14 +291,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -321,8 +339,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -341,6 +361,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -350,9 +371,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HexaGone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.loafer-project.HexaGone";
+				PRODUCT_NAME = HexAreGone;
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -360,9 +387,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HexaGone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.loafer-project.HexaGone";
+				PRODUCT_NAME = HexAreGone;
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -380,6 +413,7 @@
 				);
 				INFOPLIST_FILE = HexaGoneTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.loafer-project.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HexaGone.app/HexaGone";
 			};
@@ -395,6 +429,7 @@
 				);
 				INFOPLIST_FILE = HexaGoneTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.loafer-project.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HexaGone.app/HexaGone";
 			};
@@ -403,7 +438,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A43BB801B1603C800E3386D /* Build configuration list for PBXProject "HexaGone" */ = {
+		2A43BB801B1603C800E3386D /* Build configuration list for PBXProject "HexAreGone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A43BBA61B1603C900E3386D /* Debug */,
@@ -419,6 +454,7 @@
 				2A43BBAA1B1603C900E3386D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A43BBAB1B1603C900E3386D /* Build configuration list for PBXNativeTarget "HexaGoneTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +463,7 @@
 				2A43BBAD1B1603C900E3386D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
